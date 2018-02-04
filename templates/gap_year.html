@@ -1,0 +1,153 @@
+<html>
+<head> 
+<style> body { background-color: #FFC300; }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */=
+li a:hover {
+    background-color: #111;
+} 
+</style>
+
+
+
+
+
+</head>
+<body>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="#programs">Programs</a></li>
+  <li><a href="#contact us">Contact us</a></li>
+  <li style="float:right"><a class=" active" href="#about">About</a></li>
+</ul>
+
+
+
+ <style> body { background-color: #FFC300; } </style> 
+
+<form action="http://www.html.am/html-codes/forms/html-form-tag-action.cfm" target="result" method="get">
+
+<p>what type of gap year programs are you interested in?</p>
+<select onchange="checkFunc(this)" name="type">
+
+<option value ="none">none</option>
+
+<option value ="volunteering" id= "volunteering1">volunteering</option>
+
+<option value ="traveling">traveling</option>
+
+<option value ="working">working</option>
+
+
+</select> 
+
+<p><input type="submit" value="Submit"></p>
+
+</form>
+
+<h3>Result:</h3>
+
+<iframe name="result" style="height:20px;width:00px;"></iframe>
+
+<div id= "volunteering" style="display:none;">
+	<h1></h1>
+	<h2>International Volunteer HQ (IVHQ)<br>
+	programs:<br>
+Bali: Sea Turtle Conservation<br>
+South Africa: Childcare Program<br>
+Sri Lanka: Temple Renovation<br>
+Guatemala: Healthcare Program<br><br><br>
+
+ PLAN MY GAP YEAR<br>
+programs:<br>
+Volunteer in Sri Lanka<br>
+Volunteer in Bali<br>
+Volunteer in Ghana<br>
+Volunteer in Vietnam<br>
+Volunteer in India<br><br><br>
+
+MAXIMO NIVEL <br>
+programs:<br>
+TEFL - Teaching English Abroad<br>
+Volunteer Adventure<br>
+Education Internship<br>
+Micro Business Internship<br><br><br>
+
+
+Love Volunteers<br>
+programs in:<br>
+Nepal<br>
+<br>
+Peru
+<br>
+South Africa
+<br>
+Kenya
+<br>
+Ecuador
+<br>
+Costa Rica
+<br>
+Thailand
+<br>
+Bali
+<br>
+Zambia
+<br>
+Tanzania
+<h2>
+</div>
+
+
+
+<div id= "taveling" style="display:none;">
+	<h1>Carpe Diem Education’s Latitudes Program <br>
+ Projects Abroad’s Global Gap Year <br>
+ Winterline: 9 months. 10 countries.<br>
+ International TEFL Academy 
+ </h1>
+</div>
+
+<div id= "working" style="display:none;">
+	<h1> we believe that working during your gap year time is a very good choice, however, we believe that the working opputonities are unlimited to list, therefor; we made the choice of not listing any jobs here.
+</h1>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+	function checkFunc(event) {
+		document.getElementById(event.value).style.display = 'block';
+	}
+	// document.getElementsByClassName("example
+	var appBanners = document.getElementsByClassName('volunteering'), i;
+
+	for (var i = 0; i < appBanners.length; i ++) {
+	    // appBanners[i].style.display = 'none'; //hides
+	    appBanners[i].style.display = 'block'; //shows
+	}
+</script>
+
+</body>
+</html>

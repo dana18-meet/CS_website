@@ -1,0 +1,90 @@
+<DOCTYPE html>
+<html>
+<title>Find Your Program</title>
+
+<head>
+
+<style> body { background-color: #FFC300; }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */=
+li a:hover {
+    background-color: #111;
+} 
+</style>
+
+
+
+
+
+</head>
+<body>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="#programs">Programs</a></li>
+  <li><a href="#contact us">Contact us</a></li>
+  <li style="float:right"><a class=" active" href="#about">About</a></li>
+</ul>
+<h1 style="font-size: 65px;" align ="center "> Find Your Program</h1>
+
+<h2 style="font-size: 43px;" align= "left">
+What is 'Find Your Program?'</h2>
+
+
+<p style="font-size: 25px;" align= "center">'Find your Program' was created to help you find different international academic programs that fit different needs and wants depending on personalities. We proivide multiple options of programs including boarding schools,summer programs,summer camps and gap year programs.</p>
+<h3 style= "font-size: 45px;" align= "center"> Let's Start </h3>
+ <h4 style="font-size: 30px;" align= "left"> What are you Interested in? </h4> 
+
+
+  
+<link rel="stylesheet" type="text/css" href="PATHTOCSSHERE">
+
+<table style="width:100%">
+  <tr>
+    <td style: "align:center"> <img src="{{url_for('static', filename='imageboarding.jpg')}}" />
+    <br> 
+
+  <a href="/boardingschool"><button>Boarding Schools</button></a></td>
+
+    <td style: "align:center"> <img src="{{url_for('static', filename='summer school.jpg')}}" /> 
+    <br>
+    <a href="/summerprograms"><button>Summer Programs</button></a></td>
+
+    
+  </tr>
+  <tr>
+    <td style: "align:center"> <img src="{{url_for('static', filename='images.jpg')}}" /> 
+    <br>
+    <a href="/summercamps"><button>Summer Camps</button></a></td>
+
+    <td style: "align:center"> <img src="{{url_for('static', filename='gap year.jpg')}}" /> 
+    <br>
+    <a href="/gapyear"><button>Gap Year Programs</button></a></td>
+   
+   
+  </tr>
+ 
+</table>
+
+
+
+</body>
+</html>

@@ -1,6 +1,15 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+db = SQLAlchemy(app)
+engine = create_engine('sqlite:///project.db')
+db.metadata.bind = engine
+DBSession = sessionmaker (bind=engine)
+session = DBSession ()
+
+db.create_all()
  
 @app.route('/')
 def index():
@@ -21,9 +30,6 @@ def three():
 @app.route('/summercamps')
 def four():
     return render_template("summer_camps.html")
- 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
-db = SQLAlchemy(app)
 
 # class stuff(db.Model):
 #     __tablename__ = "stuff"
@@ -41,6 +47,6 @@ db = SQLAlchemy(app)
 
 
 
-if __name__ == "__main__":
-	app.run()
+#if __name__ == "__main__":
+#	app.run()
 
